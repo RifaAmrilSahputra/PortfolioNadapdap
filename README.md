@@ -1,4 +1,4 @@
-# Rifa Amril Sahputra --- Portfolio
+# Rifa Amril Sahputra Portfolio
 
 > Personal portfolio website built with Vue 3, TypeScript, GSAP, and
 > Tailwind CSS.
@@ -240,8 +240,7 @@ You can find me through the social links provided on the portfolio
 website and repository.
 
 -   GitHub: https://github.com/RifaAmrilSahputra
--   LinkedIn: https://www.linkedin.com/
--   X: https://x.com/
+-   LinkedIn: https://www.linkedin.com/in/rifaamrilsahputra
 
 ------------------------------------------------------------------------
 
