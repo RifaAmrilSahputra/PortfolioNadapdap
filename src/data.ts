@@ -19,10 +19,6 @@ const navLinks = [
     url: '#about-me-section',
   },
   {
-    label: 'Testimonials',
-    url: '#testimonials-section',
-  },
-  {
     label: 'Contact',
     url: '#contact-section',
   },
@@ -38,19 +34,19 @@ const navbarLinks = [
 const socialLinks = [
   {
     label: 'X',
-    url: 'https://x.com/hetaridev',
+    url: 'https://x.com/AmrilNadapdap',
   },
   {
     label: 'Telegram',
-    url: 'https://t.me/e_1_e',
+    url: 'https://t.me/+6285186675341',
   },
   {
     label: 'GitHub',
-    url: 'https://github.com/hetari',
+    url: 'https://github.com/RifaAmrilSahputra',
   },
   {
     label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/hetaridev/',
+    url: 'https://www.linkedin.com/in/rifaamrilsahputra/',
   },
 ];
 
@@ -63,13 +59,21 @@ const resourceLinks = [
     label: 'Figma Template',
     url: 'https://www.figma.com/community/file/1328038510191576951/project-starter-template',
   },
+  {
+    label: 'Ebraheem Alhetari',
+    url: 'https://github.com/Hetari/portfolio',
+  },
+  {
+    label:'Amril Nadapdap',
+    url:'https://github.com/RifaAmrilSahputra/Portfolio-ndp',
+  },
 ];
 
 const heroText =
-  'A freelance full-stack developer, making good shit since 2023, hiding bad shit since 2023.';
+  'Fresh Graduate Informatics Engineering passionate about AI, Mobile Development, and Full Stack Development.';
 
-const locationPlace = `15°22'22.0"N 44°10'39.5"E`;
-const locationCountry = 'Yemen, Sanaa';
+const locationPlace = `2°58' N 99°37' E`;
+const locationCountry = 'Asahan, Indonesia';
 
 // cal.com
 const dataCalNamespace = '30min';

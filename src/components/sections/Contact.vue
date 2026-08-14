@@ -19,11 +19,11 @@
         <p
           class="heading-4 text-flax-smoke-300 max-w-[30ch] text-center font-mono"
         >
-          Your design is a masterpiece waiting to become alive.
+          Every Great Product Starts with One Conversation.
         </p>
         <h3
           id="make-it-happen"
-          class="heading-1 text-flax-smoke-200 max-w-[10ch] text-center leading-none"
+          class="heading-1 text-flax-smoke-200 max-w-[20ch] text-center leading-none"
           v-html="makeItHappen"
         ></h3>
         <div
@@ -35,7 +35,7 @@
             :data-cal-config="dataCalConfig"
             label="Get in touch"
           /> -->
-          <Button label="Get in touch" url="https://wa.me/967775367671" />
+          <Button label="Get in touch" url="https://wa.me/6285186675341" />
         </div>
       </div>
       <div
@@ -68,9 +68,9 @@
           <p class="w-full font-bold uppercase">For further inquiries</p>
           <Link
             class="text-flax-smoke-300 h-6 text-right font-medium tracking-wider lowercase"
-            label="hetari4all@gmail"
+            label="Rifaamril2@gmail"
             :icon="true"
-            url="mailto:hetari4all@gmail"
+            url="mailto:Rifaamril2@gmail"
           />
         </div>
       </div>
@@ -89,7 +89,7 @@
   import { animateSplitText } from '@/animations';
   // import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
-  const makeItHappen = ref("Let's Make it happen");
+  const makeItHappen = ref("Let's talk about your next idea");
   onBeforeMount(() => {
     makeItHappen.value = textSplitterIntoChar(makeItHappen.value);
   });

@@ -6,9 +6,9 @@
     >
       <div class="relative flex w-full flex-col items-center">
         <div class="w-full items-end overflow-clip">
-          <div class="flex w-full items-start gap-10">
+          <div class="flex w-full items-center justify-center gap-6">
             <MyName />
-            <Star id="star" class="hide-on-mobile translate-x-full" />
+            <Star id="star" class="hide-on-mobile" />
           </div>
         </div>
 
@@ -38,8 +38,7 @@
             </div>
 
             <p class="sr-only">
-              A freelance full-stack developer, cutting-edge technologies to
-              deliver comprehensive solutions for your business.
+              A software developer passionate about mobile development, backend engineering, and AI-powered solutions.
             </p>
             <p
               v-html="whoAmI"
@@ -56,7 +55,7 @@
                   class="contact"
                   label="Get in touch"
                 /> -->
-                <Button label="Get in touch" url="https://wa.me/967775367671" />
+                <Button label="Get in touch" url="https://wa.me/6285186675341" />
               </div>
             </div>
           </div>
@@ -69,7 +68,7 @@
             <img
               id="profile-img"
               :src="profile"
-              alt="Ebraheem profile"
+              alt="Sahputra profile"
               class="size-full scale-90 rounded-lg object-cover object-top brightness-110 grayscale"
             />
           </div>
@@ -110,7 +109,7 @@
   // import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
   const whoAmI = ref(
-    'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
+    'A software developer passionate about mobile development, backend engineering, and AI-powered solutions.',
   );
   const AvailableForWorkDate = ref('');
 

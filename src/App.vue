@@ -53,7 +53,6 @@
     </div>
 
     <aboutMe />
-    <People />
     <Contact />
   </main>
 
@@ -63,7 +62,6 @@
 <script setup lang="ts">
   import {
     Hero,
-    People,
     Services,
     Works,
     aboutMe,

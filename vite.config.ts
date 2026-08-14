@@ -17,7 +17,7 @@ export default defineConfig({
     vue(),
     robots(),
     sitemap({
-      hostname: 'https://hetari.github.io/',
+      hostname: 'https://Nadapdap.github.io/',
       basePath: 'portfolio',
       changefreq: 'hourly', // default: 'daily'
       priority: 1,
@@ -29,9 +29,11 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',
+    port: 5173,
+    allowedHosts: true,
     // watch: {
-    //   usePolling: true,
-    //   interval: 1000,
+    //   usePolling: true,  
     //   ignored: ['!**/src/**/*.{js,ts,jsx,tsx}'],
     // },
   },

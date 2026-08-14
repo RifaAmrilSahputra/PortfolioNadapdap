@@ -26,8 +26,7 @@
         <p
           class="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold lg:col-span-7"
         >
-          Featured client projects that have been meticulously crafted with
-          passion and purpose over the years.
+          A selection of projects showcasing my work in AI, software engineering, and data-driven application development.
         </p>
       </div>
     </div>
@@ -57,27 +56,14 @@
         >
           <a class="group" target="_blank" :href="work.url">
             <div
-              class="flex-center relative aspect-square overflow-clip rounded-lg"
+              class="flex-center z-10 aspect-4/3 size-full overflow-hidden rounded-lg"
             >
               <img
-                alt="work-background"
+                :src="work.image"
+                :alt="work.name"
                 loading="lazy"
-                class="absolute size-full object-cover select-none"
-                :src="work.imageBg"
+                 class="mt-35 size-[82%] rounded-lg object-contain transition-transform duration-500 ease-in-out group-hover:scale-105"
               />
-              <div
-                class="flex-center z-10 aspect-4/3 size-full overflow-clip rounded-lg object-cover"
-              >
-                <!-- autoplay="false" -->
-                <video
-                  ref="videoRefs"
-                  :src="work.videoSrc"
-                  muted
-                  :autoplay="false"
-                  type="video/webm"
-                  class="size-[80%] rounded-md object-contain blur transition-all duration-500 ease-in-out"
-                ></video>
-              </div>
             </div>
             <div>
               <p class="heading-6 font-title! mt-[2%] mb-[1%] leading-none">
@@ -113,12 +99,13 @@
 <script setup lang="ts">
   import { animateSplitText } from '@/animations';
   import { textSplitterIntoChar } from '@/functions';
-  import { computed, onBeforeMount, onMounted, ref, useTemplateRef } from 'vue';
+  import { computed, onBeforeMount, onMounted, ref } from 'vue';
   import gsap from 'gsap';
   import { useWindowSize } from '@vueuse/core';
-  import { work1, work2, work3, work4, work5 } from '@/assets/videos';
-  import { workBg1, workBg2, workBg3, workBg4, workBg5 } from '@/assets/images';
-  const videoRefs = useTemplateRef<HTMLVideoElement[]>('videoRefs');
+  import semicolon from '@/assets/images/semicolon.webp';
+  import chillify from '@/assets/images/chillify.webp';
+  import boardify from '@/assets/images/boardify.webp';
+  import trackfo from '@/assets/images/trackfo.webp';
 
   const isSmallScreen = computed(() => {
     return useWindowSize().width.value < 768;
@@ -142,53 +129,39 @@
   };
 
   const selectedWorksProps = [
-    {
-      name: 'Madar',
-      category: 'Frontend',
-      tags: ['Vue.js', 'Tailwind', 'Gsap'],
-      videoSrc: work5,
-      imageBg: workBg5,
-      url: 'https://madar.services/',
-      year: '2025',
-    },
-    {
-      name: 'Iphone 15 Clone',
-      category: 'Frontend & Animation & 3D',
-      tags: ['Animation', '3D'],
-      videoSrc: work2,
-      imageBg: workBg2,
-      url: 'https://github.com/Hetari/iphone15-pro-clone',
-      year: '2024',
-    },
-    {
-      name: 'Axon',
-      category: 'Frontend & Documentation',
-      tags: ['Vue.js', 'Tailwind', 'AI'],
-      videoSrc: work3,
-      imageBg: workBg3,
-      url: 'https://github.com/Hetari/axon',
-
-      year: '2024',
-    },
-    {
-      name: 'Blogy',
-      category: 'Frontend & Backend',
-      tags: ['Vue.js', 'Laravel'],
-      videoSrc: work4,
-      imageBg: workBg4,
-      url: 'https://github.com/Hetari/blog',
-      year: '2023',
-    },
-    {
-      name: 'Pyutube',
-      category: 'CLI Tool & Cross Platform',
-      tags: ['Python', 'CLI', 'Youtube'],
-      videoSrc: work1,
-      imageBg: workBg1,
-      url: 'https://github.com/hetari/pyutube',
-      year: '2024',
-    },
-  ];
+  {
+    name: 'Semicolon',
+    category: 'AI • Machine Learning • Computer Vision',
+    tags: ['Python', 'TensorFlow', 'Computer Vision'],
+    image: semicolon,
+    url: 'https://github.com/RifaAmrilSahputra/Semicolon-Model',
+    year: '2025',
+  },
+  {
+    name: 'Chillify',
+    category: 'AI • Computer Vision',
+    tags: ['YOLO', 'Deep Learning', 'Python'],
+    image: chillify,
+    url: 'https://github.com/RifaAmrilSahputra/Chillify',
+    year: '2023',
+  },
+  {
+    name: 'Boardify',
+    category: 'Mobile • Backend',
+    tags: ['Flutter', 'Express.js', 'MySQL'],
+    image: boardify,
+    url: 'https://github.com/RifaAmrilSahputra/Boardify',
+    year: '2025',
+  },
+  {
+    name: 'TrackFO',
+    category: 'Mobile • Backend • GIS',
+    tags: ['Flutter', 'Node.js', 'Prisma'],
+    image: trackfo,
+    url: 'https://github.com/RifaAmrilSahputra/TrackFO-Mobile',
+    year: '2026',
+  },
+];
 
   // Reusable function to handle forward scroll animation
   const createForwardTimeline = (
@@ -231,42 +204,12 @@
     });
 
     return tl;
-  };
-
-  const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-    entries.forEach((entry) => {
-      const video = entry.target as HTMLVideoElement;
-      if (entry.isIntersecting) {
-        video.play();
-        video.classList.remove('blur');
-      }
-    });
-  };
-
-  const stopAllVideos = () => {
-    videoRefs.value?.map((video: HTMLVideoElement) => {
-      if (video && !video.paused) {
-        video.pause();
-        video.currentTime = 0; // Reset video to the start
-      }
-    });
-  };
+  }
   onBeforeMount(() => {
     selectedWorks.value = textSplitterIntoChar('Selected Works / ', true);
   });
 
   onMounted(() => {
-    stopAllVideos();
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.75, // Trigger when 75% of the video is visible
-    });
-
-    // Observe each video element
-    videoRefs.value?.forEach((video) => {
-      observer.observe(video);
-    });
-
     animateSplitText(
       '#selectedWorks .letters',
       '#selected-works-text',

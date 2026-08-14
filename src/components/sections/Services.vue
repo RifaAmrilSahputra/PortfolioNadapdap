@@ -19,9 +19,7 @@
         <p
           class="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold md:col-span-5"
         >
-          User-Friendly interface don't happen by chance, they are built with
-          intention. I code intuitive responsive solutions that make your users'
-          journey effortless
+          Building software that is intelligent, scalable, and made to solve meaningful problems.
         </p>
       </div>
     </div>
@@ -54,39 +52,60 @@
 
   const servicesCardProps = [
     {
-      title: 'Web Development',
-      body: 'I create custom-coded websites specifically for your brand. I focus on making sure they are scalable, fast, accessible, and have engaging animations to provide a memorable experience for users.',
-      headings: ['Modern Websites', 'Motion & Animations', 'Scalability'],
+      title: 'AI & Machine Learning',
+      body: 'I develop machine learning models and AI-powered applications that transform data into intelligent solutions. From computer vision to predictive analytics, I focus on building models that solve real-world problems.',
+      headings: [
+        'Computer Vision',
+        'Predictive Models',
+        'Model Deployment'
+      ],
       shape: `<svg viewBox="0 0 200 200"  xmlns="http://www.w3.org/2000/svg">
   <path d="M100 0C103.395 53.7596 146.24 96.6052 200 100C146.24 103.395 103.395 146.24 100 200C96.6052 146.24 53.7596 103.395 0 100C53.7596 96.6052 96.6052 53.7596 100 0Z"/>
   </svg>
   `,
     },
     {
-      title: 'Advanced Solutions',
-      body: 'I specialize in developing advanced web applications that redefine the possibilities of online platforms, crafting progressive web apps and integrating complex systems.',
-      headings: [
-        'Progressive Web Apps',
-        'Complex Integrations',
-        'Innovative Tech Solutions',
-      ],
+    title: 'Backend Development',
+    body: 'I design secure, scalable, and maintainable backend systems with RESTful APIs, authentication, databases, and cloud-ready architectures to support modern applications.',
+    headings: [
+      'REST APIs',
+      'Database Design',
+      'Authentication'
+    ],
       shape: `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <path d="M127.14 200C99.9942 200 99.9943 167.423 72.8487 167.423C41.6048 167.423 0 158.386 0 127.133C0 99.9885 32.5678 99.9885 32.5678 72.8445C32.5678 41.6139 41.6048 0 72.8602 0C100.006 0 100.006 32.5774 127.151 32.5774C158.384 32.5774 200 41.6139 200 72.8675C200 100.012 167.421 100.012 167.421 127.156C167.409 158.444 158.384 200 127.14 200Z" />
   </svg>
   `,
     },
     {
-      title: 'Code Optimization',
-      body: 'Your website deserves to be seen, speed, and responsiveness. By optimizing load times, improving user experiences, I ensure your site runs smoothly and efficiently.',
+      title: 'Mobile Development',
+      body: 'Creating responsive cross-platform mobile applications with modern UI and seamless integration to backend services.',
       headings: [
-        'Modern Frameworks',
-        'Responsive Design',
-        'Speed Optimization',
+        'Flutter',
+        'Android',
+        'Cross Platform'
       ],
-      shape: `<svg  viewBox="0 0 200 200"  xmlns="http://www.w3.org/2000/svg">
+      shape: `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M100 0
+           C118 38 162 82 200 100
+           C162 118 118 162 100 200
+           C82 162 38 118 0 100
+           C38 82 82 38 100 0Z"/>
+</svg>
+  `,
+    },
+    {
+    title: 'Data Engineering',
+    body: 'Designing data pipelines, processing datasets, and transforming raw information into actionable insights for intelligent applications.',
+    headings: [
+      'Data Processing',
+      'Visualization',
+      'Automation'
+    ],
+   shape: `<svg  viewBox="0 0 200 200"  xmlns="http://www.w3.org/2000/svg">
   <path d="M100 0L170.711 29.2893L200 100L170.711 170.711L100 200L29.2893 170.711L0 100L29.2893 29.2893L100 0Z" />
   </svg>
-  `,
+    `,
     },
   ];
 

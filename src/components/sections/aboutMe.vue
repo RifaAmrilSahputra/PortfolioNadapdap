@@ -37,16 +37,14 @@
         <img
           :src="profile2"
           class="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90 grayscale"
-          alt="Headshot of Ebraheem facing a camera"
+          alt="Headshot of Sahputra facing a camera"
         />
       </div>
       <div class="col-span-11 mt-10 md:col-span-8 md:col-start-6">
         <p
           class="heading-4 relative w-full max-w-[40ch] leading-snug font-medium text-balance"
         >
-          With a passion for design and development, I take projects from
-          ideation to launch, ensuring a seamless journey that leaves a lasting
-          positive impact on the digital landscape and your business.
+          I build intelligent software that combines AI, scalable backend systems, and modern applications to solve real-world problems. Every project is designed with performance, usability, and long-term maintainability in mind.
         </p>
 
         <div
@@ -56,12 +54,9 @@
             ( ABOUT ME )
           </p>
           <p class="heading-6 font-fancy w-full text-balance sm:max-w-[40ch]">
-            Creating great web experiences is my primary focus. I ensure each
-            project leaves users with a feel-good sensation through meticulous
-            attention to detail and user-centric design principles. <br /><br />
-            When I'm not immersed in web development and design, you can find me
-            sharing insights about my freelance journey on <i>&Xopf;</i>,
-            loudly, playing music (Funk), or just relaxing.
+            I'm a Software Engineer with a strong interest in Artificial Intelligence, Machine Learning, Backend Development, and Data Engineering. I enjoy transforming ideas into reliable software, from training models and designing APIs to building complete web and mobile applications.
+            <br /><br />
+            I'm always exploring new technologies, improving my engineering skills, and building projects that deliver practical solutions to real-world challenges. My goal is to create software that is not only functional, but also intelligent, scalable, and impactful.
           </p>
         </div>
       </div>
@@ -88,7 +83,7 @@
 
   onBeforeMount(() => {
     aboutMe.value = textSplitterIntoChar(
-      'Programmer, Developer, Web-animator/',
+      'Software, AI&Data/',
       true,
       true,
     );
