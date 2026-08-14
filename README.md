@@ -1,83 +1,248 @@
-# Rifa Amril Sahputra - Full-Stack Developer Portfolio
+# Rifa Amril Sahputra --- Portfolio
 
-### Enjoying my project? Please show your appreciation by starring it on GitHub! ⭐
+> Personal portfolio website built with Vue 3, TypeScript, GSAP, and
+> Tailwind CSS.
 
-Welcome to my portfolio! I'm **Rifa Amril Sahputra**, a full-stack developer and freelancer with a passion for creating immersive web experiences. Specializing in **Vue.js**, **GSAP** animations, and **Tailwind CSS**, I craft elegant, responsive, and fully animated websites.
+Welcome to my portfolio repository. I'm **Rifa Amril Sahputra**, an
+Informatics Engineering graduate and developer interested in **AI,
+full-stack development, mobile development, and interactive web
+experiences**.
 
-## 📜 Important Note
+This portfolio is designed to showcase my projects, technical skills,
+services, and experience through a responsive interface with custom
+animations and smooth interactions.
 
-If you would like to use or modify this portfolio, please:
+## ✨ Highlights
 
-1. **Star** this repository on GitHub.
-2. **Fork** the repository instead of cloning or downloading it directly.
-3. **Credit** Rifa Amril Sahputra as the original coder and animator, and acknowledge **Huy Nguyen** for the original UI design.
-
-In the `data.ts` file, there are resource links that credit the original designer and other relevant sources:
-
-```ts
-const resourceLinks = [
-  {
-    label: 'Huy Nguyen (the UI designer)',
-    url: 'https://www.huyng.xyz',
-  },
-  {
-    label: 'Rifa Amril Sahputra',
-    url: 'https://github.com/Nadapdap/portfolio',
-  },
-```
-
-By following these guidelines, you'll be respecting the effort and collaboration behind this project.
-
+-   Modern and responsive portfolio interface
+-   Animated loading screen and page transitions
+-   Interactive hero section
+-   Services and skills showcase
+-   Project/work showcase
+-   About Me section
+-   Testimonials / people section
+-   Contact section
+-   Smooth scrolling and UI animations
+-   SEO-related configuration with sitemap and robots files
+-   Automated deployment to GitHub Pages through GitHub Actions
 
 ## 🛠 Tech Stack
 
-This portfolio showcases my expertise in modern web technologies, including:
+  -----------------------------------------------------------------------------------
+  Technology                                      Purpose
+  ----------------------------------------------- -----------------------------------
+  [Vue.js](https://vuejs.org/)                    Frontend framework
 
-- [**Vue.js**](https://vuejs.org/) (with Composition API & TypeScript)
-- [**GSAP**](https://greensock.com/gsap/) (for stunning animations)
-- [**Tailwind CSS**](https://tailwindcss.com/) (for efficient styling)
-- [**Lenis**](https://lenis.darkroom.engineering/) (smooth scrolling)
-- [**Vite.js**](https://vitejs.dev/) (fast development and build tool)
+  [TypeScript](https://www.typescriptlang.org/)   Type-safe development
 
-## ✨ Features
+  [GSAP](https://gsap.com/)                       Animations and interactive motion
 
-The entire portfolio is a dynamic and animated experience, designed to capture attention and showcase my skills. A key aspect is its visually captivating UI, originally designed by the talented freelancer **Huy Nguyen**, whom I acknowledge and credit for allowing me to use and clone his design.
+  [Tailwind CSS](https://tailwindcss.com/)        Styling and responsive UI
 
-## 🔍 Portfolio Sections
+  [Lenis](https://lenis.darkroom.engineering/)    Smooth scrolling
 
-- **Loading Screen**: A fully animated, immersive start to the experience.
-- **Hero**: A powerful introduction highlighting my name and expertise.
-- **Services**: An overview of what I offer as a developer.
-- **My Works**: A collection of my best projects, demonstrating my skills.
-- **About Me**: A deep dive into who I am as a developer.
-- **Testimonials**: Real feedback from people I've worked with.
-- **Contact Me**: Easily get in touch via the contact form.
-- **Footer**: Site navigation and social links.
+  [Vite](https://vite.dev/)                       Development server and build tool
+
+  GitHub Actions                                  Automated build and deployment
+
+  GitHub Pages                                    Portfolio hosting
+  -----------------------------------------------------------------------------------
+
+## 📁 Project Structure
+
+``` text
+PortfolioNadapdap/
+├── .github/
+│   └── workflows/
+│       └── vue.yml
+├── public/
+│   ├── manifest.json
+│   ├── sitemap.xml
+│   └── ...
+├── src/
+│   ├── animations/
+│   ├── assets/
+│   │   └── images/
+│   ├── components/
+│   │   ├── common/
+│   │   ├── design/
+│   │   └── sections/
+│   ├── functions/
+│   ├── App.vue
+│   ├── data.ts
+│   ├── main.ts
+│   └── style.css
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+The `src/components/sections/` directory contains the main sections of
+the portfolio, including:
+
+-   **Hero**
+-   **Services**
+-   **My Works**
+-   **About Me**
+-   **People / Testimonials**
+-   **Contact**
+
+Project-specific assets are stored under `src/assets/images/`.
 
 ## 🚀 Getting Started
 
-To view the project locally, follow these steps:
+### Prerequisites
 
-```bash
-# Clone the repository
-git clone https://github.com/Nadapdap/portfolio
+Make sure you have the following installed:
 
-# Navigate to the project directory
-cd portfolio
+-   Node.js 20 or newer
+-   npm
+-   Git
 
-# Install dependencies
+### Installation
+
+Clone the repository:
+
+``` bash
+git clone https://github.com/RifaAmrilSahputra/PortfolioNadapdap.git
+```
+
+Enter the project directory:
+
+``` bash
+cd PortfolioNadapdap
+```
+
+Install dependencies:
+
+``` bash
 npm install
+```
 
-# Run the development server
+Start the development server:
+
+``` bash
 npm run dev
 ```
 
-You can now view the portfolio on `http://localhost:5173` in your browser.
+The development server will normally be available at:
 
-## 🌱 Future Plans
+``` text
+http://localhost:5173
+```
 
-I am continuously improving my portfolio and plan to add **Arabic language support** soon, making it fully bilingual for both English and Arabic users.
+### Production Build
 
-## 🎨 Acknowledgments
+To create a production build:
 
-I want to extend a special thank you to **Huy Nguyen** for his original UI design, which I have cloned with his permission. His creative vision has been instrumental in shaping the look and feel of this portfolio.
+``` bash
+npm run build
+```
+
+To preview the production build locally:
+
+``` bash
+npm run preview
+```
+
+## 🌐 Deployment
+
+This repository uses **GitHub Actions** to build and deploy the
+portfolio to **GitHub Pages**.
+
+The workflow is located at:
+
+``` text
+.github/workflows/vue.yml
+```
+
+Whenever changes are pushed to the `main` branch, GitHub Actions will:
+
+1.  Checkout the repository
+2.  Set up Node.js
+3.  Install dependencies
+4.  Build the Vue application
+5.  Upload the generated `dist` directory
+6.  Deploy the result to GitHub Pages
+
+This makes the deployment process automatic after every successful push
+to `main`.
+
+## 📌 Featured Projects
+
+The portfolio currently includes project showcases such as:
+
+-   **TrackFO** --- technician and network disturbance tracking system
+-   **Boardify**
+-   **Chillify**
+-   **Semicolon**
+
+The project information and related assets are maintained inside the
+`src/` directory.
+
+## 🎨 Design & Attribution
+
+The visual direction of this portfolio is based on an original UI
+concept by **Huy Nguyen**.
+
+Special thanks to **Huy Nguyen** for the original design inspiration and
+for allowing the design to be recreated and adapted for this portfolio.
+
+The implementation, animations, development, and customization of this
+version are by **Rifa Amril Sahputra**.
+
+Original designer:
+
+-   Huy Nguyen --- https://www.huyng.xyz
+
+Developer:
+
+-   Rifa Amril Sahputra --- https://github.com/RifaAmrilSahputra
+
+## 📜 Credits & Resources
+
+Resource and attribution links are also maintained in:
+
+``` text
+src/data.ts
+```
+
+If you reuse or modify this portfolio, please preserve the appropriate
+attribution and respect the original designer's work.
+
+## 🤝 Contributing / Reusing
+
+If you find this project useful and want to build upon it:
+
+1.  Star the repository ⭐
+2.  Fork the repository
+3.  Make your changes
+4.  Keep the original design and developer attribution
+5.  Clearly acknowledge any significant modifications you make
+
+Please do not present the original design or implementation as entirely
+your own work.
+
+## 🔮 Future Plans
+
+Planned improvements may include:
+
+-   Arabic language support
+-   Additional project showcases
+-   More interactive animations
+-   Further accessibility improvements
+-   Continued performance and SEO optimization
+
+## 📬 Contact
+
+You can find me through the social links provided on the portfolio
+website and repository.
+
+-   GitHub: https://github.com/RifaAmrilSahputra
+-   LinkedIn: https://www.linkedin.com/
+-   X: https://x.com/
+
+------------------------------------------------------------------------
+
+Made with Vue.js, TypeScript, GSAP, and a lot of experimentation. 🚀
