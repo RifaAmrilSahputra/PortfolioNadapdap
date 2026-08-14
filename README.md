@@ -194,7 +194,7 @@ version are by **Rifa Amril Sahputra**.
 
 Original designer:
 
--   Huy Nguyen --- https://www.huyng.xyz
+-   Huy Nguyen --- https://www.figma.com/community/file/1328038510191576951/project-starter-template
 
 Developer:
 
