@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import MotionPathHelper from 'gsap/MotionPathPlugin';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { Ref } from 'vue';
-import { lenis } from '@/main';
+import { lenis } from '@/functions/lenis';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathHelper);
