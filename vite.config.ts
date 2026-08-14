@@ -6,10 +6,9 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio/',
+  base: '/',
   build: {
     sourcemap: true,
-    // terserOptions:
     chunkSizeWarningLimit: 1600,
   },
   plugins: [
@@ -17,9 +16,8 @@ export default defineConfig({
     vue(),
     robots(),
     sitemap({
-      hostname: 'https://Nadapdap.github.io/',
-      basePath: 'portfolio',
-      changefreq: 'hourly', // default: 'daily'
+      hostname: 'https://portfolio-nadapdap.vercel.app/',
+      changefreq: 'hourly',
       priority: 1,
     }),
   ],
@@ -32,10 +30,6 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     allowedHosts: true,
-    // watch: {
-    //   usePolling: true,  
-    //   ignored: ['!**/src/**/*.{js,ts,jsx,tsx}'],
-    // },
   },
   optimizeDeps: {
     exclude: ['@tailwindcss/vite'],
